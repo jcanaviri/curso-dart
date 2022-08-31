@@ -40,4 +40,7 @@ git remote add origin https://github.com/jcanaviri/curso-dart.git
 
 # Eliminar el repositorio remoto
 git remote remove origin
+
+# Subir nuestro código
+git push origin main
 ```
