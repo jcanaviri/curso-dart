@@ -33,6 +33,9 @@ void main() {
   days.add('monday');
   days.add('tuesday');
 
+  print('Days: $days');
+  print('Days1: $days1');
+
   // Listas de tamaño fijo
   List<String> months = List.filled(12, '');
   months[0] = 'enero';
@@ -71,5 +74,8 @@ void main() {
   ];
 
   // Tratar de sumar una matriz
-  matrix.reduce((suma, row) => suma + row.reduce((s, numero) => s + numero));
+  var allRows = matrix.reduce((suma, row) => suma + row);
+  var result = allRows.reduce((value, element) => value + element);
+  print(result);
+  // matrix.reduce((suma, row) => suma + row.reduce((s, numero) => s + numero));
 }
